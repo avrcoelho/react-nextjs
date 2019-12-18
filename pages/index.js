@@ -1,14 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-// import { Container } from './styles';
 
-export default function pages() {
+import withAnalytics from "../src/hocs/withAnalytics";
+
+function Home() {
   return (
     <div>
       <Head>
         <title>Home</title>
       </Head>
+      <img src="/static/panda.jpg" width="200" />
       <h1>Hello world</h1>
       <Link href="/users">
         <a>Usuários</a>
@@ -16,3 +18,5 @@ export default function pages() {
     </div>
   );
 }
+
+export default withAnalytics()(Home);
