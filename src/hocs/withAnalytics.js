@@ -9,7 +9,6 @@ export default () => Composed =>
     }
 
     componentDidMount() {
-      console.log(1);
       ReactGA.initialize("ID_ANALYTICS");
       // dispara um evento no analitics, passa o path name disponivel no window (pagina que le eesta acessando)
       ReactGA.pageview(window.location.pathname);

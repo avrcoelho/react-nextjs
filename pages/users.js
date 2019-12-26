@@ -13,7 +13,9 @@ function Users({ users }) {
       </Head>
       <ul>
         {users.map(user => (
-          <li key={user.id}>{user.login}</li>
+          <li key={user.id}>
+            <Link href={`/users/${user.login}`}>{user.login}</Link>
+          </li>
         ))}
       </ul>
       <Link href="/">
