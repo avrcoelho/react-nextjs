@@ -6,7 +6,7 @@
   "author": "Andre Coelho <andre.ribeiro@iv2.com.br>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "next": "^9.1.5",
     "next-routes": "^1.4.2",
     "react": "^16.12.0",
